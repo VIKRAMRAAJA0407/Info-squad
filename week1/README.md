@@ -21,3 +21,4 @@ Streamlit Link:
 https://cea123.streamlit.app/
 
 Medium Link:
+https://medium.com/@vaishnavisathiyamoorthy/candidate-elimination-algorithm-4c05b344fdac
