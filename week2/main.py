@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 
 from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
 class Node:
     def __init__(self, feature=None, value=None, leaf_class=None):
@@ -106,10 +108,6 @@ def preprocess_data(df):
     for i, encoder in enumerate(label_encoders):
         df.iloc[:, i] = encoder.fit_transform(df.iloc[:, i])
     return df
-
-from sklearn.model_selection import train_test_split
-
-from sklearn.metrics import accuracy_score
 
 def main():
     st.title("Decision Tree Classifier")
